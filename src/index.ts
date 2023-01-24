@@ -1,5 +1,4 @@
 import resolveConfig from "tailwindcss/resolveConfig";
-import { ThemeConfig } from "tailwindcss/types/config";
 import { capitalize, isNumeric, px, rem } from "./utils";
 
 type StyleSheet = Record<string, string | number>;
