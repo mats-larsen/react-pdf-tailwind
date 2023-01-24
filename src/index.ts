@@ -1,5 +1,5 @@
 import resolveConfig from "tailwindcss/resolveConfig";
-import { TailwindConfig, TailwindTheme } from "tailwindcss/tailwind-config";
+import { ThemeConfig } from "tailwindcss/types/config";
 import { capitalize, isNumeric, px, rem } from "./utils";
 
 type StyleSheet = Record<string, string | number>;
@@ -186,7 +186,7 @@ interface Value {
 }
 
 interface Config {
-  theme: TailwindTheme;
+  theme: ThemeConfig;
 }
 
 function createTw(config?: Config) {
