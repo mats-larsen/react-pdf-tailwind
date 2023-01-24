@@ -186,7 +186,9 @@ interface Value {
 }
 
 interface Config {
-  theme: ThemeConfig;
+  theme: {
+    [key: string]: any,
+  };
 }
 
 function createTw(config?: Config) {
